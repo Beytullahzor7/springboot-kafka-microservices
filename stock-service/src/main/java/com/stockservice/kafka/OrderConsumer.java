@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class OrderConsumer {
-
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderConsumer.class);
+
 
     @KafkaListener(topics = "${spring.kafka.topic.name}",
             groupId = "${spring.kafka.consumer.group-id}")
